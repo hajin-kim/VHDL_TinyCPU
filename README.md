@@ -55,7 +55,9 @@ You can use the instructions under this section.
 
 
 #### 4) instructions
+
 operation	operand1	operand2	operand3	opcode  
+
 - LD	reg(dest)	reg(A)	(don’t care)	0101  
 - LD	reg(dest)	<8 bit --	-- value>	0100  
 - ADD	reg(dest)	reg(A)	reg(B)	1111  
@@ -66,8 +68,10 @@ operation	operand1	operand2	operand3	opcode
 - AND	reg(dest)	reg(A)	<value>	1010  
 - OR	reg(dest)	reg(A)	reg(B)	1001  
 - OR	reg(dest)	reg(A)	<value>	1000  
+
 Operands are 4 bit binary numbers that means immediate value or register number.  
 For example, 0100000001010110 is  
+
 - 0100	: LD(immediate value)
 - 0000	: reg0
 - 01010110	: value to store
