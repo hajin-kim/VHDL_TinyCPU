@@ -21,10 +21,12 @@
 For more informations, please refer to the above analysis.  
 
 #### 1) Input and Output
+
 Input:
 - clock		: The clock of the system. Positive.
 - reset		: Place FSM in initial state. Positive, asynchronous.
 - instr		: User can give machine code directly through this signal on testbench.
+
 Output:
 - output0 ~ output15	: The value of each general purpose registers
 
