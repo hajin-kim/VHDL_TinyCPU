@@ -31,7 +31,7 @@ Output:
 - output0 ~ output15	: The value of each general purpose registers
 
 
-#### 2) components
+#### 2) Components
 [tiny_CPU.vhd](tiny_CPU.vhd)		: top-level  
 [tb_tiny_CPU.vhd](tb_tiny_CPU.vhd)		: testbench  
 [ALU.vhd](ALU.vhd)  
@@ -45,7 +45,7 @@ Output:
 [register_file_write_MUX.vhd](register_file_write_MUX.vhd)  
 
 
-#### 3) testbench usage
+#### 3) Testbench Usage
 First, open the testbench file and go to the line 113.  
 There is a block-like guide comment.  
 Please put your testbenches on that file, especially in that block if no problem.  
@@ -54,7 +54,7 @@ There are some instructions for an example.
 You can use the instructions under this section.  
 
 
-#### 4) instructions
+#### 4) Instructions
 
 operation	operand1	operand2	operand3	opcode  
 
