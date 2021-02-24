@@ -1,0 +1,17 @@
+﻿Start time (ns),End time (ns),Instruction,Analysis
+0,10,(reset),All registers were cleared.
+60,100,LD reg0 <01010110>,The immediate value was loaded to register 0. Worked well.
+100,140,LD reg1 <01010101>,The immediate value was loaded to register 1. Worked well.
+140,180,ADD reg2 reg0 reg1,Reg0 + reg1 = 01010110 + 01010101 = 10101011 was stored to register 2. Worked well.
+180,220,SUB reg3 reg0 reg1,Reg0 – reg1 = 01010110 – 01010101 = 00000001 was stored to register 3. Worked well.
+220,260,AND reg4 reg0 reg1,Reg0 AND reg1 = 01010110 AND 01010101= 01010100 was stored to register 4. Worked well.
+260,300,OR reg5 reg0 reg1,Reg0 OR reg1 = 01010110 OR 01010101= 01010111 was stored to register 4. Worked well.
+300,340,SUB reg6 reg1 reg0,"Reg1 – reg0 = 01010101 – 01010110 = 11111111, because of the borrow. Since we don’t care the sign and overflow, this worked well."
+340,380,ADD reg2 reg0 <0001>,Reg0 + 0001 = 01010110 + 00000001 = 01010111 was stored to reg2. Worked well.
+380,420,SUB reg3 reg0 <0001>,Reg0 – 0001 = 01010110 – 00000001 = 01010101 was stored to reg3. Worked well
+420,460,AND reg4 reg0 <0001>,Reg0 AND 0001 = 01010110 AND 00000001 = 00000000 was stored to reg4. Worked well.
+460,500,OR reg5 reg0 <0001>,"Reg0 OR 0001 = 01010110 OR 00000001 = 01010111 is equal to the previous value of the reg5. Thus, the value of reg5 didn’t get changed. Worked well"
+500,540,LD reg0 <00000000>,The immediate value was loaded to register 0. Worked well.
+540,580,LD reg1 reg0,"The value of reg0, 00000000 was loaded to register 1. Worked well."
+580,620,ADD reg2 reg2 reg2,Reg2 + reg2 = 01010111 + 01010111 = 10101110 was stored to reg2. Worked well.
+620,800,,Testbench while loop. The reputation resulted in the same.
